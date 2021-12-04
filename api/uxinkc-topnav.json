@@ -33,7 +33,7 @@
     {
       "uid": "linkedin-id",
       "label": "Linked In",
-      "path": "http://www.linkedin.com/bignamehere",
+      "path": "//linkedin.com/bignamehere",
       "hasChild": "false",
       "columnClass": "",
       "icon": {
@@ -44,7 +44,7 @@
     {
       "uid": "twitter-id",
       "label": "Twitter",
-      "path": "http://www.twitter.com/uxinkc",
+      "path": "//twitter.com/uxinkc",
       "hasChild": "false",
       "columnClass": "",
       "icon": {
