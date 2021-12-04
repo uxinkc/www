@@ -3,14 +3,14 @@
     {
       "uid": "about-id",
       "label": "About",
-      "path": "/",
+      "path": "/about",
       "hasChild": "false",
       "columnClass": ""
     },
     {
       "uid": "insights-id",
       "label": "Insights",
-      "path": "/insights",
+      "path": "/insights/everything",
       "hasChild": "false",
       "columnClass": ""
     },
@@ -18,6 +18,13 @@
       "uid": "case-studies-id",
       "label": "Case Studies",
       "path": "/case-studies",
+      "hasChild": "false",
+      "columnClass": ""
+    },
+    {
+      "uid": "users-id",
+      "label": "Users Demo",
+      "path": "/users",
       "hasChild": "false",
       "columnClass": ""
     },
@@ -33,7 +40,7 @@
     {
       "uid": "linkedin-id",
       "label": "Linked In",
-      "path": "//linkedin.com/bignamehere",
+      "path": "https://linkedin.com/in/bignamehere",
       "hasChild": "false",
       "columnClass": "",
       "icon": {
@@ -44,7 +51,7 @@
     {
       "uid": "twitter-id",
       "label": "Twitter",
-      "path": "//twitter.com/uxinkc",
+      "path": "https://twitter.com/uxinkc",
       "hasChild": "false",
       "columnClass": "",
       "icon": {
