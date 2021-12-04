@@ -11,7 +11,7 @@
     <main id="main-content" tabindex="-1">
       <div class="fsa-section">
         <div class="fsa-section__bd">
-          <h1>Insights</h1>
+          <h1>About</h1>
           <p>It was the best of times. It was the worst of times.</p>
 
         </div>
