@@ -1,0 +1,138 @@
+{
+  "main": [
+    {
+      "uid": "home-id",
+      "label": "Home",
+      "path": "/",
+      "hasChild": "false",
+      "columnClass": ""
+    },
+    {
+      "uid": "about-id",
+      "label": "About",
+      "path": "/about",
+      "hasChild": "false",
+      "columnClass": ""
+    },
+    {
+      "uid": "services-id",
+      "label": "Services",
+      "path": "/services",
+      "hasChild": "false",
+      "columnClass": ""
+    },
+    {
+      "uid": "products-id",
+      "label": "Products",
+      "path": "/products",
+      "hasChild": "true",
+      "columnClass": "fsa-nav-global__list-item--multi-column",
+      "hasHeaders": "true",
+      "children": [
+        {
+          "uid": "reports-overview-id",
+          "header": "Regional Offerings",
+          "group": [
+            {
+              "uid": "cyclical-purchasing-overview-id",
+              "label": "Overview",
+              "path": "/reports/overview",
+              "hasChild": "false"
+            },
+            {
+              "uid": "rps-investment-placement-id",
+              "label": "Investment Placement",
+              "path": "/reports/investment-placement",
+              "hasChild": "false"
+            },
+            {
+              "uid": "cp-premium-exposure-drive-id",
+              "label": "Premium Exposure Drive",
+              "path": "/transaction/premium-exposure-drive",
+              "hasChild": "false"
+            },
+            {
+              "uid": "transfer-refill-observation-id",
+              "label": "Transfer Refill Observation",
+              "path": "/transaction/premium-exposure-drive",
+              "hasChild": "false"
+            },
+            {
+              "uid": "ocs-drive-texture-mechanics-id",
+              "label": "Drive Texture Mechanics",
+              "path": "/transaction/ocs-drive-textrure-mechanics",
+              "hasChild": "false"
+            }
+          ]
+        },
+        {
+          "uid": "overage-charge-stream-id",
+          "header": "Local Governance",
+          "group": [
+            {
+              "uid": "overage-charge-stream-overview-id",
+              "label": "Overview",
+              "path": "/transaction/ocs-overview",
+              "hasChild": "false"
+            },
+            {
+              "uid": "ocs-budgetary-max-funding-id",
+              "label": "Reporting Configuration",
+              "path": "/transaction/ocs-reporting-configuration",
+              "hasChild": "false"
+            },
+            {
+              "uid": "ocs-investment-placement-id",
+              "label": "Investment Placement",
+              "path": "/transaction/ocs-investment-placement",
+              "hasChild": "false"
+            },
+            {
+              "uid": "ocs-burden-investment-id",
+              "label": "Burden Investment",
+              "path": "/transaction/ocs-burden-investment",
+              "hasChild": "false"
+            },
+            {
+              "uid": "ocs-performance-management-id",
+              "label": "Performance Management",
+              "path": "/transaction/ocs-performance-management",
+              "hasChild": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "contact-id",
+      "label": "Contact",
+      "path": "/contact",
+      "hasChild": "false",
+      "columnClass": ""
+    }
+  ],
+  "side": [
+    {
+      "uid": "current-user-id",
+      "label": "Michael Scott",
+      "path": "/profile",
+      "hasChild": "false",
+      "columnClass": "",
+      "icon": {
+        "class": "fsa-icon fsa-icon--size-1",
+        "path": "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+      }
+    },
+    {
+      "uid": "logout-id",
+      "label": "Logout",
+      "path": "http://www.google.com",
+      "hasChild": "false",
+      "columnClass": "",
+      "icon": {
+        "class": "fsa-icon fsa-icon--size-1",
+        "path": "M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+      }
+    }
+  ]
+}
