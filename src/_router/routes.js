@@ -10,6 +10,11 @@ const NotFound = () => import('../views/NotFound.vue');
 const routes = [
   { 
     path: '/',
+    name: 'default',
+    component: About
+  },
+  { 
+    path: '/about',
     name: 'about',
     component: About
   },

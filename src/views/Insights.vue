@@ -11,10 +11,10 @@
     <main id="main-content" tabindex="-1">
       <div class="fsa-section">
         <div class="fsa-section__bd">
-          <h1>Dynamic Router Demo</h1>
+          <h1>Insights</h1>
 
           <div class="fsa-m-t--sm">
-              <p class="fsa-m-t--7">What page are we on?  <span class="fsa-text-size--5">{{ pageName }}</span></p>
+              <p class="fsa-m-t--7">What would you like to know about?  <span class="fsa-text-size--5">{{ pageName }}</span></p>
           </div>
 
 
@@ -52,7 +52,6 @@ export default {
     };
 
     onMounted(() => {
-      console.log("Insights onMounted");
       store.dispatch("topnav/setNavigation");
     });
 

@@ -14,7 +14,11 @@
                     <h3 class="fsa-nav-global__sub-menu-title" :id="child.uid">{{ child.header }}</h3>
                     <ul class="fsa-nav-global__sub-menu-list" :aria-labelledby="child.uid">
                       <li v-for="gp in child.group" :key="gp.id" class="fsa-nav-global__sub-menu-item">
-                        <router-link :to='gp.path' class="fsa-nav-global__sub-menu-link">{{ gp.label }}</router-link>
+                        <a :href="gp.path"
+                          @click.prevent="goto(gp.path)"
+                          :class="isActiveSection(gp.path)">
+                          {{ gp.label }}
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -29,7 +33,11 @@
                 <div class="fsa-nav-global__sub-menu-bd">
                   <ul class="fsa-nav-global__sub-menu-list" :aria-labelledby="item.uid+'-SUB'">
                     <li v-for="child in item.children" :key="child.id" class="fsa-nav-global__sub-menu-item">
-                      <router-link :to='child.path' class="fsa-nav-global__sub-menu-link">{{child.label}}</router-link>
+                      <a :href="child.path"
+                        @click.prevent="goto(child.path)"
+                        :class="'fsa-nav-global__sub-menu-link' + child.path==currentSection ? ' fsa-nav-global__link--active' : ''">
+                        {{child.label}}
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -43,23 +51,29 @@
                 <div class="fsa-nav-global__sub-menu-bd">
                   <ul class="fsa-nav-global__sub-menu-list" :aria-labelledby="item.uid+'-SUB'">
                     <li v-for="child in item.children" :key="child.id" class="fsa-nav-global__sub-menu-item">
-                      <router-link :to='child.path' class="fsa-nav-global__sub-menu-link">{{child.label}}</router-link>
+                      <a :href="child.path"
+                        @click.prevent="goto(child.path)"
+                        :class="'fsa-nav-global__sub-menu-link' + child.path==currentSection ? ' fsa-nav-global__link--active' : ''">
+                        {{child.label}}
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div v-else="item.hasChild=='false'">
-              <router-link :to='item.path' class="fsa-nav-global__link">
+              <a :href="item.path"
+                @click.prevent="goto(item.path)"
+                :class="isActiveSection(item.path)">
                 <span class="fsa-nav-global__text">{{item.label}}</span>
-              </router-link> 
+              </a> 
             </div>
           </li>
         </ul>
         <div v-if="NAV_DATA.side" class="fsa-nav-global__aside">
           <div class="fsa-level">
             <span v-for="sideItem in NAV_DATA.side" :key="sideItem.uid">
-              <router-link :to="sideItem.path">
+              <a :href="sideItem.path" @click.prevent="goto(sideItem.path)">
                 <span class="fsa-level fsa-level--inline fsa-level--gutter-xs">
                   <svg v-if="sideItem.icon"
                     :class="sideItem.icon.class" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> 
@@ -67,7 +81,7 @@
                   </svg>
                   <span>{{sideItem.label}}</span>
                 </span>
-              </router-link>
+              </a>
             </span>
           </div>
         </div>
@@ -114,6 +128,8 @@
 
 <script>
 import { ref, reactive, computed, onMounted, watch, onBeforeUnmount } from 'vue';
+import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 import { useMenuSystem } from '@/composables/useMenuSystem';
 
 export default {
@@ -126,6 +142,8 @@ export default {
   },
   
   setup(props, { emit }){    
+    const store = useStore();
+    const router = useRouter();
     const { 
       openMenu,
       closeMenu,
@@ -133,6 +151,26 @@ export default {
       listenForKeys,
       documentClickHandler
     } = useMenuSystem();
+
+    const isActiveSection = (path) => {
+      let curr = store.getters["topnav/getCurrSection"];
+      if( curr ){
+        if( path.includes(curr) ) return 'fsa-nav-global__link fsa-nav-global__link--active'
+        else return 'fsa-nav-global__link';
+      }
+    }
+
+    const goto = ( path ) => {
+      // check for external path
+      if ( path.includes('http') ) {
+         window.location.href = path;
+      } else {
+        let newPath = '/' + path.split('/')[1] ;
+        store.dispatch("topnav/setSection", newPath);
+        router.push(path);
+      }
+    }
+
 
     function toggleMenu(e) {
       let theItem = e.currentTarget;
@@ -143,12 +181,10 @@ export default {
 
       if (expanded=="true") closeMenu( theItem, theMenu );
       else openMenu( theItem, theMenu );
-      
     };
 
     const doSearch = (event) => {
       let p = document.getElementById('searchPhrase').value
-      console.log('p',p)
       emit("emitSearch", {type: 'default', phrase: p})
     }
 
@@ -158,8 +194,8 @@ export default {
       emit("emitSearch", {type: 'scoped', scope: cat, phrase: p})
     }
 
+
     onMounted(()=>{
-      console.log('global-nav onMounted', props.NAV_DATA);
       window.addEventListener('keydown', listenForKeys);
       document.addEventListener('click', documentClickHandler);
       loopItems('addFocusListeners');
@@ -172,7 +208,8 @@ export default {
     });    
     
     return {
-
+      goto,
+      isActiveSection,
       openMenu,
       closeMenu,
       loopItems,

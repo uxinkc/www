@@ -5,14 +5,18 @@ import { topNavService } from '../_services/topnav.service';
 const state = () =>({
   isLoaded: false,
   errors: [],
-  data: []
+  data: [],
+  prevSection: '',
+  currSection: '/about'
 });
   
 
 const getters = {
   isLoaded: state => state.isLoaded,
   getErrors: state => state.errors,
-  getNavigation: state => state.data  
+  getNavigation: state => state.data,
+  getPrevSection: state => state.prevSection,
+  getCurrSection: state => state.currSection
 };
 
 const actions = {
@@ -27,6 +31,10 @@ const actions = {
         commit('SET_NAV', result.data );
       }
     });
+  },
+
+  setSection( {commit }, payload ){
+    commit('SET_SECTION', payload)
   }
 
 };
@@ -40,6 +48,11 @@ const mutations = {
     state.data = navigation;
     state.isLoaded = true;
   },
+
+  SET_SECTION( state, payload ){
+    state.prevSection = state.currSection;
+    state.currSection = payload;
+  }
 
 };
 

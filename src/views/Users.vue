@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import { ref, computed, watch } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { useStore } from 'vuex';
 
 import globalNav from "@/components/global-nav/global-nav.vue";
@@ -103,7 +103,6 @@ export default {
     })
 
     onMounted(() => {
-      console.log("Users onMounted");
       store.dispatch("topnav/setNavigation");
     });
 
