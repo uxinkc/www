@@ -1,13 +1,13 @@
 {
-  "name": "squarepeg",
+  "name": "uxinkc",
   "version": "3.2.0",
-  "description": "Square Peg - Change hiring, so hiring changes.",
-  "homepage": "https://squarepegjobs.com",
-  "author": "spj",
-  "private": true,
+  "description": "personal portfolio site for Casey Hill",
+  "homepage": "https://uxinkc.com",
+  "author": "Casey Hill",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build:dist"
+    "build": "gulp build:dist",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.2",
