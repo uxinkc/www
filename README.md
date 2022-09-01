@@ -1,2 +1,1 @@
-# www
-uxinkc.com website
+# UXinKC website

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar-nav">
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": false,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+            <h1 class="display-1 mb-3">Terms and Conditions</h1>
+            
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row gx-0">
+        
+        <!-- /column -->
+        <div class="col-xl-4 offset-lg-4">
+          <section id="terms-conditions" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">1. Terms and Conditions</h2>
+                <p>Please don't steal my stuff or SPAM me... </p>
+                <p>Thanks.</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="bg-dark text-inverse">
+    <div class="container py-13 py-md-15">
+      @@include('_footer-widgets.html', {
+        "lightText": true
+      })
+    </div>
+    <!-- /.container -->
+  </footer>
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

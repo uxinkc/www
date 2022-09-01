@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-light">
+			@@include('_navbar.html', {
+				"classList": "center-nav transparent navbar-light",
+				"otherClassList": "w-100 d-flex ms-auto",
+				"otherSearch": false,
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Contact",
+				"otherBtnLink": "@@webRoot/contact"
+			})
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-light">
+			<div class="container pt-10 pb-8 pt-md-14 pb-md-10 text-center">
+				<div class="row">
+					<div class="col-md-7 col-lg-7 col-xl-7 mx-auto">
+						<h1 class="display-1 mb-3">Insights. Experiences. Ramblings.</h1>
+						<p class="lead px-lg-5 px-xxl-8">An interesting collection of my thoughts, recommendations, and randomness.</p>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light">
+			<div class="container pb-14 pb-md-16">
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+									
+						<div class="blog grid grid-view">
+							<div class="row isotope gx-md-8 gy-8 mb-8">
+								<article class="item post col-md-6">
+									<div class="card">
+										<figure class="card-img-top overlay overlay-1 hover-scale"><a href="@@webRoot/insights/smart-defaults"> <img src="@@webRoot/assets/img/cdh/insights/smart-defaults-1.jpg" alt="Journal with UX themed writing" /></a>
+											<figcaption>
+												<h5 class="from-top mb-0">Read More</h5>
+											</figcaption>
+										</figure>
+										<div class="card-body">
+											<div class="post-header">
+												<div class="post-category text-line text-slack">User Experience</div>
+												<!-- /.post-category -->
+												<h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="@@webRoot/insights/smart-defaults">Smart Defaults</a></h2>
+											</div>
+											<!-- /.post-header -->
+											<div class="post-content">
+												<p>Developing solutions for Users that remove roadblocks and enable completion of tasks.</p>
+											</div>
+											<!-- /.post-content -->
+										</div>
+										<!--/.card-body -->
+										<div class="card-footer">
+											<ul class="post-meta d-flex mb-0">
+												<li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Apr 2019</span></li>
+											</ul>
+											<!-- /.post-meta -->
+										</div>
+										<!-- /.card-footer -->
+									</div>
+									<!-- /.card -->
+								</article>
+								<!-- /.post -->
+								<article class="item post col-md-6">
+									<div class="card">
+										<figure class="card-img-top overlay overlay-1 hover-scale"><a href="@@webRoot/insights/design-systems"> <img src="@@webRoot/assets/img/cdh/insights/design-system-1.jpg" alt="Whiteboard with UX materials" /></a>
+											<figcaption>
+												<h5 class="from-top mb-0">Read More</h5>
+											</figcaption>
+										</figure>
+										<div class="card-body">
+											<div class="post-header">
+												<div class="post-category text-line text-slack">User Experience</div>
+												<!-- /.post-category -->
+												<h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="@@webRoot/insights/design-systems">Design Systems</a></h2>
+											</div>
+											<!-- /.post-header -->
+											<div class="post-content">
+												<p>Creating cohesive and consistent User Experiences across the enterprise.</p>
+											</div>
+											<!-- /.post-content -->
+										</div>
+										<!--/.card-body -->
+										<div class="card-footer">
+											<ul class="post-meta d-flex mb-0">
+												<li class="post-date"><i class="uil uil-calendar-alt"></i><span>1 Oct 2018</span></li>
+											</ul>
+											<!-- /.post-meta -->
+										</div>
+										<!-- /.card-footer -->
+									</div>
+									<!-- /.card -->
+								</article>
+								<!-- /.post -->
+								<article class="item post col-md-6">
+									<div class="card">
+										<figure class="card-img-top overlay overlay-1 hover-scale"><a href="@@webRoot/insights/hate-unicorns"> <img src="@@webRoot/assets/img/cdh/insights/hate-unicorns-1.jpeg" alt="Unicorn Lego figure" /></a>
+											<figcaption>
+												<h5 class="from-top mb-0">Read More</h5>
+											</figcaption>
+										</figure>
+										<div class="card-body">
+											<div class="post-header">
+												<div class="post-category text-line text-slack">Industry</div>
+												<!-- /.post-category -->
+												<h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="@@webRoot/insights/hate-unicorns">We Really Hate Unicorns</a></h2>
+											</div>
+											<!-- /.post-header -->
+											<div class="post-content">
+												<p>Musing on the unique ability to do multiple things within the tech industry.</p>
+											</div>
+											<!-- /.post-content -->
+										</div>
+										<!--/.card-body -->
+										<div class="card-footer">
+											<ul class="post-meta d-flex mb-0">
+												<li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Aug 2018</span></li>
+											</ul>
+											<!-- /.post-meta -->
+										</div>
+										<!-- /.card-footer -->
+									</div>
+									<!-- /.card -->
+								</article>
+								<!-- /.post -->
+								
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.blog -->
+
+
+						<!-- <nav class="d-flex" aria-label="pagination">
+							<ul class="pagination">
+								<li class="page-item disabled">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true"><i class="uil uil-arrow-left"></i></span>
+									</a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true"><i class="uil uil-arrow-right"></i></span>
+									</a>
+								</li>
+							</ul>
+						</nav> -->
+
+
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse">
+	  <div class="container py-13 py-md-15">
+	    @@include('_footer-widgets.html', {
+				"lightText": true
+			})
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>

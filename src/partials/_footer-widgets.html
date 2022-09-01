@@ -1,0 +1,55 @@
+<div class="row gy-6 gy-lg-0">
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      @@if (!context.lightText) {
+        <img class="mb-4" src="@@webRoot/assets/img/logo-dark.png" alt="UXinKC Logo" />
+        <!-- <img class="mb-4" src="@@webRoot/assets/img/logo-dark.png" srcset="@@webRoot/assets/img/logo-dark@2x.png 2x" alt="UXinKC Logo" /> -->
+      }
+      @@if (context.lightText) {
+        <img class="mb-4" src="@@webRoot/assets/img/logo-light.png" alt="UXinKC Logo" />
+        <!-- <img class="mb-4" src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="UXinKC Logo" /> -->
+      }
+      <p class="">Copyright 2022 <br /> UXinKC - Casey Hill <br />All rights reserved.</p>
+      <nav class="nav social @@if (context.lightText) {social-white}">
+        <a href="https://twitter.com/uxinkc" target="_blank"><i class="uil uil-twitter"></i></a>
+        <a href="https://linkedin.com/in/bignamehere" target="_blank"><i class="uil uil-linkedin"></i></a>        
+      </nav>
+      <!-- /.social -->
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title @@if (context.lightText) {text-white} mb-3">Get in Touch</h4>
+      <address class="pe-xl-15 pe-xxl-17"></address>
+      <a href="mailto:uxinkc@gmail.com" @@if (!context.lightText) {class="link-body"}>uxinkc@gmail.com</a><br /> <a href="tel:(913)908-2677">(913) 908-2677</a>
+    </div>
+    <!-- /.widget -->
+  </div>
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title @@if (context.lightText) {text-white} mb-3">Learn More</h4>
+      <ul class="list-unstyled @@if (!context.lightText) {text-reset} mb-0">
+        <li><a href="/">About</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+
+  <!-- /column -->
+  <div class="col-md-4 col-lg-3">
+    <div class="widget">
+      <h4 class="widget-title @@if (context.lightText) {text-white} mb-3">Legal</h4>
+      <ul class="list-unstyled @@if (!context.lightText) {text-reset} mb-0">
+        <li><a href="/terms">Terms of Use</a></li>
+      </ul>
+    </div>
+    <!-- /.widget -->
+  </div>
+  
+</div>
