@@ -7,8 +7,8 @@
 	<div class="content-wrapper">
 		<header class="wrapper bg-soft-primary">
 			@@include('_navbar.html', {
-				"classList": "center-nav transparent navbar-light",
-				"otherClassList": "w-100 d-flex ms-auto",
+				"classList": "classic transparent position-absolute navbar-light",
+				"otherClassList": "d-flex ms-auto ms-lg-4",
 				"otherSearch": false,
 				"otherBtn": true,
 				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-md-10 col-xl-8 mx-auto">
 						<div class="post-header">
-							<div class="post-category text-line">
+							<div class="post-category mt-10 text-line">
 								<a href="#" class="hover" rel="category">User Experience</a>
 							</div>
 							<!-- /.post-category -->
@@ -68,13 +68,13 @@
                         </figure>
                         <figcaption class="figure-caption text-center"><a href="http://usda-fsa.github.io/fsa-design-system/" target="_target">FPAC Design System</a> hosted on Github</figcaption>
 
-                        <p class="mt-8">At the USDA, part of my role as a UX Architect is to help build, test, and evangelize the FSA Design System, whose purpose is to bring cohesion and consistency to over 250 applications designed and developed by federal employees.</p>
+                        <p class="mt-8">At the USDA, part of my role as a Senior Principal Enterprise UX Architect is to help build, test, and evangelize the FSA Design System (Updated: now <a href="https://usda-fsa.github.io/fsa-design-system/" target="_blank">FPAC Design System</a>), whose purpose is to bring cohesion and consistency to over 250 applications designed and developed by federal employees.</p>
 
                         <h3 class="h2 mb-4">$1 Million for Buttons</h3>
 
                         <p>We presented to various groups within the USDA, and I started each presentation explaining a very common situation for organizations that have a large number of development teams. By first identifying a problem, and sharing it with executive-level stakeholders, we were able to gain buy-in from the top. Organizations spend millions of dollars often reinventing the wheel, or button in this case, and a Design System helps to eliminate this failed practice.</p>
 
-                        <p class="mb-4">Below are slides from the presentation that illustrated the impact of many development teams all producing buttons which creates a library of inconsistent buttons, and costs the organization millions of dollars.</p>
+                        <p class="mb-4">Below are slides from the presentation that illustrated the impact of many development teams all producing buttons which creates a library of inconsistent buttons, and costs the organization millions of dollars. The presentation walks the audience thru <em>"what it would look like"</em> to build all of the buttons for a single application, and the cost associated with this process. We then extrapolate the button example across an entire enterprise of teams and products, and immediately see the <strong>problem at scale</strong>.</p>
                         
                         <div class="row g-6 mt-3 mb-10">
 													<div class="col-md-6">
@@ -108,39 +108,39 @@
 
                       <h3 class="h2 mb-4">Evolving Your Design Process</h3>
 
-                      <p>As part of the discovery and evangelism stages of the FSA Design System, I facilitated and lead the proceedings of a Digital Usability Team, consisting of around 25 individuals. We met weekly, shared ideas, and help discussion that helped inform the building and testing of numerous prototypes in an effort to build a Minimum Viable Product (MVP) of a Design System. The group included various members of development teams, products owners, and end Users as well. The process was exploratory in nature, and generally ran like a focus group that tested features, components, and process flow.</p>
+                      <p>As part of the discovery and evangelism stages of the FSA Design System, I facilitated and led the Digital Usability Team, consisting of around 25 senior stakeholders within multiple organizations of the USDA. We met weekly, shared ideas, and held discussions which helped inform the development of numerous prototypes in an effort to build a Minimum Viable Product (MVP) of a Design System. The group included various members of development teams, products owners, and county office Users as well. The process was exploratory in nature, and generally ran like a focus group that tested features, components, and process flow.</p>
 
-                      <p class="mb-4">When I started, I first utilized Axure with a combination of static Wireframes and interactive Wireframes. As many UX Architects know and understand, Wireframing is a process that helps flesh out ideas prior to developers spending hundreds of hours coding a working application. The main flaw of a Wireframe is that very few individuals outside of the UX industry know how to use them and interpret them, especially product owners and clients. I always like to compare Wireframes to football plays or pages of music. Unless you are a coach or a musician, it is very hard to understand what is going on.</p>
+                      <p class="mb-4">When I started, I first utilized Axure with a combination of static Wireframes and interactive Wireframes. As many UX Architects know and understand, Wireframing is a process that helps flesh out ideas prior to developers spending hundreds of hours coding a working application. The main <strong>flaw of Wireframes</strong> is their inability to gain understanding and consensus across stakeholders. Very few individuals outside of the UX industry know how to use and interpret them, especially product owners and clients. I like to compare Wireframes to football plays or pages of music notes. Unless you are a coach or a musician, it is very hard to understand what is going on.</p>
 
                       <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-9.jpeg" data-glightbox="title: Music notes within a book;" data-gallery="post">
                         <img src="@@webRoot/assets/img/cdh/insights/design-system-9.jpeg" alt="" /></a>
                       </figure>
                       <figcaption class="figure-caption text-left ml-2">&nbsp;&nbsp;Photo by <a href="https://unsplash.com/photos/rPOmLGwai2w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_target">Marius Masalar</a></figcaption>
 
-                      <p class="mt-8">But what if you could watch the football plan being run at a practice, or listen to the piano play the music? You would have much better understanding about what to expect in the stadium or at the opera house. This is were a <strong>high fidelity experience</strong> is warranted, and interactive prototypes come into play. We are visual learners as humans, and to see what something looks like and experience the interactions, we quickly find a path to understanding.</p>
+                      <p class="mt-8">But what if you could watch the football plan being run at a practice, or listen to the piano play the music? You would have much better understanding about what to expect in the stadium or at the opera house. This is where <strong>high fidelity experiences</strong> are warranted, and interactive prototypes come into play. We are visual learners as humans, and to see what something looks like and experience the interactions, we quickly find a path to understanding.</p>
 
-                      <p>As I was working with the Digital Usability Team, I noticed a resistance happening each week from a number of individuals. While my Axure prototypes were mostly understandable to the developers and QA testers, the business representatives and <strong>End Users generally had a hard time following along</strong>. The Design System was far enough along that I decided to start using it as a means to quickly prototype out various concepts. What happened immediately was a better understanding of the concepts and process flow for the end User, because the audience could "hear the music" or "watch the play unfold".</p>
+                      <p>As I was working with the Digital Usability Team, I noticed resistance each week from a number of individuals. While Axure prototypes were mostly understandable to the developers and Business Analysts, the business representatives and <strong>End Users generally had a hard time following along</strong>, and I decided pivot my process. With the Design System being far enough along, I decided to start using it as a means to quickly prototype various concepts. What happened immediately was a better understanding of the concepts and process flow for the end User, because the audience could "hear the music" or "watch the play unfold".</p>
 
-                      <p>The FSA Design System, even in its infancy, was being used in the way development teams would strategically utilizing it within their own projects. I very quickly was able to create high fidelity prototypes, that retained the same look and feel across all features at a speed traditionally unattainable with normal UX tools. <strong>Wireframes were indecipherable, and design comps lacked movement and process flow</strong>. The new process became an exercise of Whiteboard sessions mockups of new features, followed by prototypes utilizing the Design System itself.</p>
+                      <p>Even in its infancy, the FSA Design System was being strategically used in the same way development teams would eventually build their own projects and progam applications. I very quickly was able to create high fidelity prototypes, that retained the same look and feel across all features at a speed traditionally unattainable with normal UX tools. <strong>Wireframes were indecipherable, and design comps lacked movement and process flow</strong>. The new process became an exercise of Whiteboard sessions mockups of new features, followed by prototypes utilizing the Design System itself.</p>
 
                       <h3 class="h2 mb-4">So, what is a Design System?</h3>
 
-                      <p>When you combine an ever evolving codebase with documentation that provides guidelines on how it is utilized, you have a Design System. That sounds a little abstract and since we as humans are visual learners, I believe it is best explained by using an analogy and showing imagery that most can relate to. The goal of any architectural project is to build something, and to help us out with better understanding how a design system works, let's start by building the below Lego truck.</p>
+                      <p>When you combine an ever-evolving codebase with documentation that provides examples and guidelines on how to effectively build your application, you have a Design System. This might sound a bit abstract and since we as humans are visual learners, I believe it is best explained by using an analogy with imagery. The goal of any architectural project is to build <em>"something"</em>. To help with this understanding, we can focus on the process of building the below LEGO truck. The below adapted analogy and imagery credit goes to "Multiscreen UX Design" by Wolfram Nagel and "The Atomic Workflow" by Brad Frost.</p>
 
-                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-10.png" data-glightbox="title: Our goal is to build this Lego Truck;" data-gallery="post">
+                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-10.png" data-glightbox="title: Our goal is to build this LEGO Truck;" data-gallery="post">
                         <img src="@@webRoot/assets/img/cdh/insights/design-system-10.png" alt="" /></a>
                       </figure>
-                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;Our goal is to build this Lego Truck</figcaption>
+                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;Our goal is to build this LEGO Truck</figcaption>
 
-                      <p class="mt-8">As kids, we began with a large pile of hundreds of mismatched Legos. It was very difficult to find more than one or two pieces that had the same shape, size, color, or function. It was always a mess. As architects, <strong>we need to be smarter</strong> about how we play with our toys, and so we decide to first build a Design System before we start building anything else.</p>
+                      <p class="mt-8">As kids, we began with a large pile of hundreds of mismatched LEGOs. It was very difficult to find more than one or two pieces that had the same shape, size, color, or function. It was always a mess. As architects, <strong>we need to be smarter</strong> about how we play with our toys, and so we decide to first build a Design System before we start building anything else.</p>
 
 
-                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-11.png" data-glightbox="title: We organize our legos based on a specific color palette;" data-gallery="post">
+                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-11.png" data-glightbox="title: We organize our LEGOs based on a specific color palette;" data-gallery="post">
                         <img src="@@webRoot/assets/img/cdh/insights/design-system-11.png" alt="" /></a>
                       </figure>
-                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;We organize our legos based on a specific color palette</figcaption>
+                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;We organize our LEGOs based on a specific color palette</figcaption>
 
-                      <p class="mt-8">Once we have started to organize the Legos, and have identified a color palette, we can see how a theme is developing. One of the main issues within large organizations is having many digital experiences and keeping them all on brand.</p>
+                      <p class="mt-8">Once we have started to organize the LEGOs and have identified a color palette, we can see how a theme is developing. One of the main issues within large organizations is having many digital experiences and keeping them all on brand.</p>
 
 
 
@@ -149,15 +149,15 @@
                       </figure>
                       <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;We organize the individual parts and arrange by size, shape, and function</figcaption>
 
-                      <p class="mt-8">By creating an organizational system that logically places the parts and pieces in an arrangement based on size, shape, and function, anyone can now utilize this Design System to quickly build our Lego truck.</p>
+                      <p class="mt-8">By creating an organizational system that logically places the parts and pieces in an arrangement based on size, shape, and function, anyone can now utilize this Design System to quickly build our LEGO truck.</p>
 
 
-                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-13.png" data-glightbox="title: Now we can quickly build our Lego truck;" data-gallery="post">
+                      <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-13.png" data-glightbox="title: Now we can quickly build our LEGO truck;" data-gallery="post">
                         <img src="@@webRoot/assets/img/cdh/insights/design-system-13.png" alt="" /></a>
                       </figure>
-                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;Now we can quickly build our Lego truck</figcaption>
+                      <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;Now we can quickly build our LEGO truck</figcaption>
 
-                      <p class="mt-8">Because of the speed and efficiency that is gained thru utilizing a Design System, different Lego vehicles can be build that are cohesive, consistent, and operate in very similar ways. We have achieved a methodology that optimizes a build process and alleviates the need to make design decisions that could potentially cause a poor User Experience.</p>
+                      <p class="mt-8">Because of the speed and efficiency that is gained thru utilizing a Design System, different LEGO vehicles can be build that are cohesive, consistent, and operate in very similar ways. We developed a methodology that optimizes a automated build process, solves for Accessibility issues (Section 508 Compliance), and alleviates the need to make design decisions that could potentially cause a poor User Experience.</p>
 
 
                       <figure class="hover-scale rounded cursor-dark"><a href="@@webRoot/assets/img/cdh/insights/design-system-14.png" data-glightbox="title: We can build different types of vehicles that remain true to design and functional standards;" data-gallery="post">
@@ -165,18 +165,16 @@
                       </figure>
                       <figcaption class="figure-caption text-center ml-2">&nbsp;&nbsp;We can build different types of vehicles that remain true to design and functional standards</figcaption>
 
-                      <p class="mt-8">Because of the speed and efficiency that is gained thru utilizing a Design System, different Lego vehicles can be build that are cohesive, consistent, and operate in very similar ways. We have achieved a methodology that optimizes a build process and alleviates the need to make design decisions that could potentially cause a poor User Experience.</p>
+                      
+
+                      <h3 class="h2 mt-8 mb-4">Products Giving Back</h3>
 
 
-                      <h3 class="h2 mb-4">Products Giving Back</h3>
-
-                      <p>One of the major benefits of a Design System is the feedback and development loop that is created by all product development teams utilizing the same codebase. If a new feature is developed in one product, the feature's code can be fed back into the original Design System, allowing for distribution to all other products.</p>
-
-                      <p>For example, lets assume our new product requires a contact us form, and the Design System has a number of different form fields that can already be used. We build out our application but discover the requirements ask for a field to have a toggle, which doesn't currently exist. A developer can build a new toggle component utilizing the same patterns of markup and style of other documented components, and launch the new project with a new feature. If it is deeded to be a component that would benefit from being shared across other applications, the code can be integrated in the Design System codebase and them pushed out to all products with a new release. The feedback and development look is completed when other projects update their codebase with the latest Design System release and can now utilize the toggle component.</p>
+                      <p>Following the <a href="https://www.usability.gov/what-and-why/user-centered-design.html" target="_blank">User-Centered Design process</a>, we can consider new components or UX patterns to include in future iterations. For example, lets assume our new product requires a Contact Us form, and the Design System has a number of different form fields. We build out our application but discover the application requires Toggle capabilities, which doesn't currently exist within our Design System. A new toggle component can be built for the profram application, utilizing the similar markup and style. If the UX Architecture team believes the enterprise would benefit from this new component, we can integrate it into the next version release of the Design System. Both old and new products can update their codebase via NPM or other methodologies, and easily take advantage of the latest components and features.</p>
 
                       <h3 class="h2 mb-4">Final Thoughts</h3>
 
-                      <p>Building a Design System to create cohesive and consistent User Experiences will require a bit of ramp up time, but once a MVP is available, product teams can begin to see the benefits of working with a Design System. As the codebase continues to be build out, the accompanying documentation informs development teams of best practices, usage, and accessibility concerns.</p>
+                      <p>Building a Design System to create cohesive and consistent User Experiences will require more effort initially to <a href="https://usda-fsa.github.io/fsa-design-system/visual-style/" target="_blank">build the foundation</a>, but once an MVP is available, product teams can begin to see the benefits. As the codebase is built out, the accompanying documentation informs development teams of best practices, usage, and accessibility concerns.</p>
 
 
                       <div class="row g-6 mt-3 mb-10">
@@ -195,7 +193,9 @@
                       </div>
 
 
-                      <p class="mt-8">Working with Design Systems has changed my way of thinking and the way I approach a design challenge. Not all organizations have the ability to build their own Design Systems, but there are a number of Open Source ones available for adaptation and integration, including the <a href="http://usda-fsa.github.io/fsa-design-system" target="_blank">FSA Design System</a> we have been reviewing. I highly recommend looking into ways to incorporate the same methodology and process if you are looking to <strong>speed up product development and create consistent and cohesive digital experiences</strong>.</p>
+                      <p class="mt-8">Working with Design Systems has changed my way of thinking, and the way I approach a design challenge. Not all organizations have the ability to build their own Design Systems, but there are a number of Open Source ones available for adaptation and integration, including the <a href="https://github.com/USDA-FSA/fsa-design-system" target="_blank">FSA Design System</a> itself. I highly recommend looking into ways to incorporate the same methodology and process if you are looking to speed up product development and <strong>create consistent and cohesive digital experiences</strong>.</p>
+
+											<p class="mt-8">Good Luck!</p>
 
 
                     </article>

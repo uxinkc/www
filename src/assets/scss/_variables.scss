@@ -46,6 +46,9 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 //----------------------------------------------------------//
 //	COLOR SYSTEM
 //----------------------------------------------------------//
+$uxinkc: #d4135c !default;
+$uxinkc-dark: #ba1353 !default;
+
 $white: #fff !default;
 $black: #000 !default;
 $gray-100: #fefefe !default;
@@ -87,7 +90,8 @@ $colors: ("blue": $blue,
   "light": $light,
   "gray": $gray,
   "dark": $dark,
-  "slack": #d4135c,
+  "uxinkc": $uxinkc,
+  "uxinkc-dark": $uxinkc-dark,
   "primary": $primary,
 ) !default;
 $secondary: $gray-400 !default;
@@ -256,9 +260,9 @@ $body-color: $gray-700 !default;
 //----------------------------------------------------------//
 //	LINKS
 //----------------------------------------------------------//
-$link-color: $slack !default;
+$link-color: $uxinkc !default;
 $link-decoration: none !default;
-$link-hover-color: $slack !default;
+$link-hover-color: $uxinkc-dark !default;
 $link-hover-decoration: null !default;
 $link-transition: all 0.2s ease-in-out !default;
 $link-transition2: all 0.3s ease-in-out !default;
@@ -476,14 +480,14 @@ $nav-link-padding-y: 1.2rem !default;
 $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: 0.8rem !default;
 $nav-link-font-weight: $font-weight-bold !default;
-$nav-link-color: $main-dark !default;
-$nav-link-hover-color: $main-color !default;
+$nav-link-color: $uxinkc !default;
+$nav-link-hover-color: $uxinkc-dark !default;
 $nav-link-transition: color 0.2s ease-in-out !default;
 $nav-link-disabled-color: $gray-500 !default;
 $nav-tabs-border-color: $border-light !default;
 $nav-tabs-border-radius: $border-radius !default;
 $nav-tabs-link-hover-border-color: transparent !default;
-$nav-tabs-link-active-color: $main-color !default;
+$nav-tabs-link-active-color: $uxinkc !default;
 $nav-tabs-link-active-bg: $white !default;
 $nav-tabs-link-active-border-color: $border-light !default;
 $nav-pills-border-radius: $border-radius !default;
@@ -506,9 +510,9 @@ $navbar-dark-active-color: rgba($white, 0.7) !default;
 $navbar-dark-disabled-color: rgba($white, 0.25) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='45' height='32' viewBox='0 0 45 32'><path fill='#{$navbar-dark-color}' d='M26.88 29.888c-1.076 1.289-2.683 2.103-4.48 2.103s-3.404-0.814-4.472-2.093l-0.008-0.009-5.12-7.040-8.192-10.048-3.52-4.608c-0.646-0.848-1.036-1.922-1.036-3.087 0-2.828 2.292-5.12 5.12-5.12 0.139 0 0.277 0.006 0.413 0.016l-0.018-0.001h33.664c0.118-0.010 0.256-0.015 0.396-0.015 2.828 0 5.12 2.292 5.12 5.12 0 1.165-0.389 2.239-1.045 3.1l0.009-0.013-3.52 4.608-7.872 10.048z'/></svg>") !default;
 $navbar-dark-toggler-border-color: transparent !default;
-$navbar-light-color: $main-dark !default;
-$navbar-light-hover-color: $main-color !default;
-$navbar-light-active-color: $main-color !default;
+$navbar-light-color: $uxinkc !default;
+$navbar-light-hover-color: $uxinkc-dark !default;
+$navbar-light-active-color: $uxinkc !default;
 $navbar-light-disabled-color: rgba($main-dark, 0.3) !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='45' height='32' viewBox='0 0 45 32'><path fill='#{$main-color}' d='M26.88 29.888c-1.076 1.289-2.683 2.103-4.48 2.103s-3.404-0.814-4.472-2.093l-0.008-0.009-5.12-7.040-8.192-10.048-3.52-4.608c-0.646-0.848-1.036-1.922-1.036-3.087 0-2.828 2.292-5.12 5.12-5.12 0.139 0 0.277 0.006 0.413 0.016l-0.018-0.001h33.664c0.118-0.010 0.256-0.015 0.396-0.015 2.828 0 5.12 2.292 5.12 5.12 0 1.165-0.389 2.239-1.045 3.1l0.009-0.013-3.52 4.608-7.872 10.048z'/></svg>") !default;
 $navbar-light-toggler-border-color: transparent !default;
@@ -526,10 +530,10 @@ $dropdown-bg: $white !default;
 $dropdown-border-radius: $border-radius !default;
 $dropdown-divider-margin-y: $spacer * .5 !default;
 $dropdown-box-shadow: $box-shadow-md !default;
-$dropdown-link-color: $main-dark !default;
-$dropdown-link-hover-color: $main-color !default;
+$dropdown-link-color: $uxinkc !default;
+$dropdown-link-hover-color: $uxinkc-dark !default;
 $dropdown-link-hover-bg: inherit !default;
-$dropdown-link-active-color: $main-color !default;
+$dropdown-link-active-color: $uxinkc !default;
 $dropdown-link-active-bg: inherit !default;
 $dropdown-link-disabled-color: $gray-700 !default;
 $dropdown-item-padding-y: $spacer * 0.2 !default;

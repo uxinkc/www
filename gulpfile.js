@@ -11,8 +11,7 @@ var path = {
     colorcss: 'dev/assets/css/colors/',
     img: 'dev/assets/img/',
     fonts: 'dev/assets/fonts/',
-    media: 'dev/assets/media/',
-    php: 'dev/assets/php/'
+    media: 'dev/assets/media/'
   },
   dist: {
     html: 'dist/',
@@ -23,11 +22,10 @@ var path = {
     colorcss: 'dist/assets/css/colors/',
     img: 'dist/assets/img/',
     fonts: 'dist/assets/fonts/',
-    media: 'dist/assets/media/',
-    php: 'dist/assets/php/'
+    media: 'dist/assets/media/'
   },
   src: {
-    html: ['src/**/*.html', '!src/partials/**/*.html', '!src/assets/php/**/*.html'],
+    html: ['src/**/*.html', '!src/partials/**/*.html'],
     partials: 'src/partials/',
     js: 'src/assets/js/',
     vendorjs: 'src/assets/js/vendor/*.*',
@@ -38,11 +36,10 @@ var path = {
     vendorcss: 'src/assets/css/vendor/*.*',
     img: 'src/assets/img/**/*.*',
     fonts: 'src/assets/fonts/**/*.*',
-    media: 'src/assets/media/**/*.*',
-    php: 'src/assets/php/**/*.*'
+    media: 'src/assets/media/**/*.*'
   },
   watch: {
-    html: ['src/**/*.html', '!src/assets/php/**/*.html'],
+    html: ['src/**/*.html'],
     partials: 'src/partials/**/*.*',
     themejs: 'src/assets/js/theme.js',
     vendorjs: 'src/assets/js/vendor/*.*',
@@ -53,7 +50,6 @@ var path = {
     img: 'src/assets/img/**/*.*',
     fonts: 'src/assets/fonts/**/*.*',
     media: 'src/assets/media/**/*.*',
-    php: 'src/assets/php/',
     user: 'src/assets/scss/_user-variables.scss'
   },
   clean: {
@@ -313,16 +309,7 @@ gulp.task('media:dist', function () {
 });
 
 // Move php
-gulp.task('php:dev', function () {
-  return gulp.src(path.src.php)
-    .pipe(newer(path.dev.php))
-    .pipe(gulp.dest(path.dev.php));
-});
-gulp.task('php:dist', function () {
-  return gulp.src(path.src.php)
-    .pipe(newer(path.dist.php))
-    .pipe(gulp.dest(path.dist.php));
-});
+
 
 // Image processing
 gulp.task('image:dev', function () {
@@ -382,7 +369,6 @@ gulp.task('build:dev',
       'themejs:dev',
       'fonts:dev',
       'media:dev',
-      'php:dev',
       'image:dev'
       )
     )
@@ -401,7 +387,6 @@ gulp.task('build:dist',
       'themejs:dist',
       'fonts:dist',
       'media:dist',
-      'php:dist',
       'image:dist'
       )
     )
@@ -420,7 +405,6 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.img, gulp.series('image:dist'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:dist'));
     gulp.watch(path.watch.media, gulp.series('media:dist'));
-    gulp.watch(path.watch.php, gulp.series('php:dist'));
     gulp.watch(path.watch.user, gulp.series('colorcss:dist'));
 });
 

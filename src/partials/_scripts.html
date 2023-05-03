@@ -22,4 +22,11 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+
+  window.onload = (event) => {
+    let year = new Date().getFullYear();
+    let copyright = document.querySelectorAll(`[data-copyright]`);
+    copyright.forEach(item => item.innerHTML = year);
+  };
+
 </script>
