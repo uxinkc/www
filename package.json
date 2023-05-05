@@ -10,12 +10,12 @@
     "deploy": "firebase deploy"
   },
   "devDependencies": {
-    "@popperjs/core": "^2.11.2",
-    "autoprefixer": "10.4.5",
-    "bootstrap": "^5.1.3",
+    "@popperjs/core": "2.11.2",
+    "bootstrap": "5.1.3",
     "browser-sync": "~2.27.7",
     "del": "~6.0.0",
     "gulp": "~4.0.2",
+    "autoprefixer": "10.4.5",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-beautify": "^3.0.0",
     "gulp-cache": "~1.1.3",
