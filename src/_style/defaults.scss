@@ -1,0 +1,12 @@
+
+$size-base: 0.4rem;
+$size-small: 0.8rem;
+$size-medium: 1.2rem;
+$size-large: 2.4rem;
+$size-xlarge: 3.6rem;
+
+//$lead-max-width:                77rem !default;
+.ds-login {
+  width: $size-base * 100;
+  min-width: $size-base * 80;
+}

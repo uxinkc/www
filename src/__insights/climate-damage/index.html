@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "classic transparent position-absolute navbar-light",
+				"otherClassList": "d-flex ms-auto ms-lg-4",
+				"otherSearch": false,
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Contact",
+				"otherBtnLink": "@@webRoot/contact"
+			})
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-soft-primary">
+			<div class="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">
+				<div class="row">
+					<div class="col-md-10 col-xl-8 mx-auto">
+						<div class="post-header">
+							<div class="post-category mt-10 text-line">
+								<a href="#" class="hover" rel="category">Industry</a>
+							</div>
+							<!-- /.post-category -->
+							<h1 class="display-1 mb-4">Climate Damage</h1>
+							<ul class="post-meta mb-5">
+								<li class="post-date"><i class="uil uil-calendar-alt"></i><span>19 Jan 2023</span></li>
+								<li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By Casey Hill</span></a></li>
+								<!-- <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span> Comments</span></a></li>
+								<li class="post-likes"><a href="#"><i class="uil uil-heart-alt"></i>3<span> Likes</span></a></li> -->
+							</ul>
+							<!-- /.post-meta -->
+						</div>
+						<!-- /.post-header -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light">
+			<div class="container pb-14 pb-md-16">
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="blog single mt-n17">
+							<div class="card">
+								<figure class="card-img-top">
+                  <img src="@@webRoot/assets/img/cdh/insights/robot-toy-1.png" alt="Antique Tin Robot Wind-up Toy" />
+                  <figcaption class="figure-caption text-left">&nbsp;&nbsp;Photo by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_target">Rock’n Roll Monkey</a></figcaption>
+                </figure>
+								<div class="card-body">
+									<div class="classic-view">
+										<article class="post">
+											<div class="post-content mb-5">
+												
+                        <h2 class="h1 mb-4">Does your job create climate damage?</h2>
+
+												<p>I’m sure you have thought about how your actions affect climate change on a personal level, and most likely you do everything in your power to help reduce your carbon footprint and lower emissions. We all want to avoid a real-life sequel to Kevin Costner’s post-apocalyptic adventure Waterworld, but are we writing the screenplay without knowing it? I sat down with a really great friend of mine, and had a short discussion about this topic, and the results were rather interesting.</p>
+
+                        <p><strong><i>Me: </i></strong>“How much climate damage happens from poorly optimized websites?”</p>
+
+                        <p><strong><i>ChatGPT: </i></strong>“Poorly optimized websites can contribute to climate change by consuming more energy and generating more carbon emissions. This can happen when websites have a lot of large images or videos that take a long time to load, or when they are not designed to be mobile-friendly and require more data to be transferred...”</p>
+
+                        <p class="text-center mt-10 mt-md-14">
+                          <a href="https://uxinkc.medium.com/does-your-job-create-climate-damage-3e36721a580a" target="_blank" class="btn btn-primary">Read the full article on Medium</a>
+                        </p>
+                      </div>
+
+                    </article>
+                  </div>
+								</div>
+								<!-- /.card-body -->
+							</div>
+							<!-- /.card -->
+						</div>
+						<!-- /.blog -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse">
+	  <div class="container py-13 py-md-15">
+	    @@include('_footer-widgets.html', {
+				"lightText": true
+			})
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "main": [
+    {
+      "uid": "about-id",
+      "label": "About",
+      "path": "/about",
+      "hasChild": "false" 
+    },
+    {
+      "uid": "insights-id",
+      "label": "Insights",
+      "path": "/insights",
+      "hasChild": "false" 
+    },
+    {
+      "uid": "projects-id",
+      "label": "projects",
+      "path": "/projects",
+      "hasChild": "false" 
+    }
+  ],
+  "side": [
+    {
+      "uid": "contact-id",
+      "label": "Contact",
+      "path": "/contact",
+      "hasChild": "false" 
+    }
+  ]
+}
