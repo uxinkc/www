@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "gulp serve",
     "build": "gulp build:dist",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy --only hosting:uxinkc"
   },
   "devDependencies": {
     "@popperjs/core": "2.11.2",
